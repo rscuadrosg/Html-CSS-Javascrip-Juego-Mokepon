@@ -1,0 +1,323 @@
+body {
+    height: 100vh;
+    background-image: url(/assets/img/background8bit.jpg);
+    backdrop-filter: blur(1px);
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    font-family: 'VT323', monospace;
+    display: none;
+}
+
+.contenedor_ppal{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contenedor_combate {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    height: inherit;
+    margin-top: 2vh;
+    margin-bottom: 50px;
+}
+
+.card_combate_players{
+    border-radius: 20px;
+    width: 20%;
+    border: 1px solid black;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+    -webkit-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    height: 70%;
+    justify-content: center;
+}
+
+.card_combate_center {
+    border-radius: 20px;
+    width: 50%;
+    border: 1px solid black;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+    -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.cabeceras {
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabeceras * span {
+    font-size: 30px;
+}
+
+.resultados_combate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resultados_combate * p {
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+}
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    border-radius: 10px;
+    width: 70vh;
+    border: 1px solid black;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+    -webkit-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+}
+
+.titulo_ppal {
+    color: yellow;
+    -webkit-text-stroke: 2px rgb(36, 114, 154);
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    line-height: 20px;
+    margin-top: 40px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tarjetas div {
+    flex: 1 1 200px;
+}
+
+.subtitulo{
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#seleccionar-mascota div {
+    font-family: 'VT323', monospace;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+#seleccionar-mascota label {
+    font-family: 'VT323', monospace;
+    border: 1px solid rgb(129, 129, 129);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+#seleccionar-mascota label:hover {
+    border: 3px solid rgb(255, 254, 254);
+}
+
+
+#seleccionar-mascota input:checked + label {
+    color: rgb(168, 255, 122);
+    border: 5px double rgb(168, 255, 122);
+}
+
+#seleccionar-mascota input:checked + label p {
+    font-size: 25px;
+}
+
+#seleccionar-mascota input:checked + label img {
+    width: 120px;
+    box-sizing: border-box;
+    margin-top: -25px;
+}
+
+#seleccionar-mascota button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+#seleccionar-mascota button:hover {
+    font-size: 30px;
+    background-color: rgb(62, 62, 62);
+    box-sizing: border-box;
+}
+
+#contenedor {
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+.tarjetas-mokepon{
+    border-radius: 20px;
+}
+
+.tarjetas-mokepon p{
+    font-size: 20px;
+    line-height: 10px;
+    margin-top: 5px;
+}
+
+.tarjetas-mokepon img {
+    margin-top: -5px;
+    width:100px;
+}
+
+.tarjetas-mokepon-selected{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetas-mokepon-selected p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tarjetas-mokepon-selected img {
+    margin-top: -5px;
+    width:100px;
+}
+
+.tarjetas-mokepon img:hover {
+    width: 120px;
+    box-sizing: border-box;
+    margin-top: -25px;
+}
+
+
+#card-selected_user {
+    display: none;
+}
+
+#card_selected_pc {
+    display: none;
+}
+
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+    -webkit-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+    margin-bottom: 0;
+    color: aliceblue;
+}
+
+#seleccionar-ataque h2{
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+
+.botones_ataque {
+    margin-top: 5px;
+}
+
+.btn-atk {
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn-atk:hover {
+    font-size: 25px;
+    background-color: rgb(62, 62, 62);
+    box-sizing: border-box;
+}
+
+.mostrar_vidas {
+    font-size: 50px;
+}
+
+#reiniciar button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+#reiniciar button:hover {
+    font-size: 30px;
+    background-color: rgb(62, 62, 62);
+    box-sizing: border-box;
+}
+
+#mensaje_final h1{
+    color: yellow;
+    -webkit-text-stroke: 0.5px rgb(36, 114, 154);
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+}
