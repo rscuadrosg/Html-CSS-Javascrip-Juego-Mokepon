@@ -257,13 +257,19 @@ function combate(){
 
 //Funcion para validar si las vidas llegan a 0
 function revisarVidas(){
+
+    let bloqueBotonesAtk = document.getElementById('bloque-btn-atk')
+    let bloqueSubtitulo = document.getElementById('bloque-subtitulo')
+    
     if (vidasPC==0){
         mostrarResFinal("GANASTE!!! 🥳🎉🎉")
-        alert("GANASTE!!! 🥳🎉🎉")
+        bloqueBotonesAtk.style.display = 'none'
+        bloqueSubtitulo.style.display = 'none'
     }
     else if (vidasJugador==0){
         mostrarResFinal("PERDISTE...😔😓😔")
-        alert("PERDISTE...😔😓😔")
+        bloqueBotonesAtk.style.display = 'none'
+        bloqueSubtitulo.style.display = 'none'
     }
 
 }
@@ -283,6 +289,7 @@ function mostrarResFinal(resCombateFinal){
     mensajeFinal.appendChild(mostrarResFinal)
 
     //Deshabilitar botones 
+
     let botonAgua = document.getElementById('btn_sel_atk_agua')
     botonAgua.disabled = true
     let botonFuego = document.getElementById('btn_sel_atk_fuego')

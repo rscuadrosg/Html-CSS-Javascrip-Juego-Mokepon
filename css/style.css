@@ -14,7 +14,13 @@ input {
 .contenedor_ppal{
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 15px;
+}
+
+.cont_combate-gral {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
 }
 
 .contenedor_combate {
@@ -41,7 +47,7 @@ input {
     flex-direction: column;
     align-items: center;
     align-content: flex-start;
-    height: 70%;
+    height: 100%;
     justify-content: center;
 }
 
@@ -84,41 +90,40 @@ input {
     align-items: center;
 }
 
+
 .resultados_combate * p {
-    font-size: 18px;
-    line-height: 10px;
+    font-size: 15px;
+    line-height: 5px;
     text-align: center;
 }
 
+
+.titulo_ppal {
+    color: yellow;
+    -webkit-text-stroke: 1px rgb(36, 114, 154);
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 1rem;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
 
 #seleccionar-mascota {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 92vh;
     border-radius: 10px;
-    width: 70vh;
+    width: 120vh;
     border: 1px solid black;
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
     -webkit-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
 }
-
-.titulo_ppal {
-    color: yellow;
-    -webkit-text-stroke: 2px rgb(36, 114, 154);
-    flex-direction: column;
-    font-family: 'Press Start 2P', cursive;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    line-height: 20px;
-    margin-top: 40px;
-    text-shadow: 0.1em 0.1em 0.2em black
-}
-
 
 .tarjetas {
     display: flex;
@@ -146,7 +151,7 @@ input {
 #seleccionar-mascota label {
     font-family: 'VT323', monospace;
     border: 1px solid rgb(129, 129, 129);
-    width: 150px;
+    width: 200px;
     height: 150px;
     text-align: center;
     padding: 10px;
@@ -167,7 +172,7 @@ input {
 }
 
 #seleccionar-mascota input:checked + label p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 #seleccionar-mascota input:checked + label img {
@@ -264,21 +269,25 @@ input {
     color: aliceblue;
 }
 
-#seleccionar-ataque h2{
+#seleccionar-ataque h2 {
     margin-bottom: 5px;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 .botones_ataque {
     margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .btn-atk {
-    width: 130px;
+    width: 180px;
     height: 50px;
     border-radius: 15px;
     font-family: 'VT323', monospace;
-    font-size: 20px;
+    font-size: 25px;
     background-color: black;
     color: aliceblue;
     box-sizing: border-box;
@@ -301,8 +310,8 @@ input {
     border-radius: 15px;
     font-family: 'VT323', monospace;
     font-size: 25px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     background-color: black;
     color: aliceblue;
     box-sizing: border-box;
@@ -319,5 +328,917 @@ input {
     -webkit-text-stroke: 0.5px rgb(36, 114, 154);
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        height: 100vh;
+        background-image: url(/assets/img/background8bit.jpg);
+        backdrop-filter: blur(1px);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor_ppal{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .cont_combate-gral {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    #seleccionar-mascota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 92vh;
+        border-radius: 10px;
+        width: 120vh;
+        border: 1px solid black;
+        margin-top: 0px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        justify-content: flex-start;
+    }
+
+    .titulo_ppal {
+        color: yellow;
+        -webkit-text-stroke: 1px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+
+    .subtitulo {
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        font-size: 28px;
+        margin: 0 auto;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .tarjetas-mokepon p {
+        font-size: 20px;
+        line-height: 0px;
+        margin-top: 10px;
+    }
+
+    .tarjetas-mokepon img {
+        margin-top: 0px;
+        width: 80px;
+    }
+
+    #seleccionar-mascota label {
+        font-family: 'VT323', monospace;
+        border: 1px solid rgb(129, 129, 129);
+        width: 20vw;
+        height: 20vh;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 7px;
+        box-sizing: border-box;
+        color: aliceblue;
+    }
+
+    #seleccionar-mascota input:checked + label img {
+        width: 85px;
+        box-sizing: border-box;
+        margin-top: -15px;
+    }
+
+    .botones_ataque {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+    .btn-atk {
+        width: 130px;
+        height: 50px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 22px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #seleccionar-ataque{
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+
+    #seleccionar-ataque h2 {
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .cont_combate-gral {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    #mensaje_final h1 {
+        color: yellow;
+        -webkit-text-stroke: 0.5px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #reiniciar button {
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+    }
+
+    .resultados_combate * p {
+        font-size: 15px;
+        line-height: 5px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    body {
+        height: 100vh;
+        background-image: url(/assets/img/background8bit.jpg);
+        backdrop-filter: blur(1px);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor_ppal{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .cont_combate-gral {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    #seleccionar-mascota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 92vh;
+        border-radius: 10px;
+        width: 100vh;
+        border: 1px solid black;
+        margin-top: 0px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        justify-content: flex-start;
+    }
+
+    .titulo_ppal {
+        color: yellow;
+        -webkit-text-stroke: 1px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+
+    .subtitulo {
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        font-size: 28px;
+        margin: 0 auto;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .tarjetas-mokepon p {
+        font-size: 20px;
+        line-height: 0px;
+        margin-top: 10px;
+    }
+
+    .tarjetas-mokepon img {
+        margin-top: 0px;
+        width: 80px;
+    }
+
+    #seleccionar-mascota label {
+        font-family: 'VT323', monospace;
+        border: 1px solid rgb(129, 129, 129);
+        width: 20vw;
+        height: 20vh;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 7px;
+        box-sizing: border-box;
+        color: aliceblue;
+    }
+
+    #seleccionar-mascota input:checked + label img {
+        width: 85px;
+        box-sizing: border-box;
+        margin-top: -15px;
+    }
+
+    .botones_ataque {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .btn-atk {
+        width: 130px;
+        height: 50px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 22px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #seleccionar-ataque{
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+
+    #seleccionar-ataque h2 {
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .cont_combate-gral {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    #mensaje_final h1 {
+        color: yellow;
+        -webkit-text-stroke: 0.5px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #reiniciar button {
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+    }
+
+    .resultados_combate * p {
+        font-size: 15px;
+        line-height: 5px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    body {
+        height: 100vh;
+        background-image: url(/assets/img/background8bit.jpg);
+        backdrop-filter: blur(1px);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor_ppal{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+
+    /* SELECCION MOKEPON */
+    .cont_combate-gral {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+
+    #seleccionar-mascota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 95vh;
+        border-radius: 10px;
+        width: 60vh;
+        border: 1px solid black;
+        margin-top: 0px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+    }
+
+    .titulo_ppal {
+        color: yellow;
+        -webkit-text-stroke: 1px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
+        line-height: 1rem;
+        text-shadow: 0.1em 0.1em 0.2em black
+    }
+
+    .subtitulo{
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .tarjetas-mokepon p {
+        font-size: 15px;
+        line-height: 0px;
+        margin-top: 10px;
+    }
+
+    .tarjetas-mokepon img {
+        margin-top: 0px;
+        width: 70px;
+    }
+
+    #seleccionar-mascota label {
+        font-family: 'VT323', monospace;
+        border: 1px solid rgb(129, 129, 129);
+        width: 25vw;
+        height: 20vh;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 7px;
+        box-sizing: border-box;
+        color: aliceblue;
+    }
+
+    #seleccionar-mascota input:checked + label img {
+        width: 78px;
+        box-sizing: border-box;
+        margin-top: -15px;
+    }
+
+    
+
+    /* VISTA COMBATE */
+    .btn-atk {
+        width: 100px;
+        height: 40px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 14px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #seleccionar-ataque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 98vh;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        margin-bottom: 0px;
+        color: aliceblue;
+    }
+
+
+    
+    .contenedor_combate {
+        display: flex;
+        justify-content: space-between;
+        width: 85vw;
+        height: inherit;
+        margin-top: 2vh;
+        margin-bottom: 50px;
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .card_combate_players {
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid rgb(180, 180, 180);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+        height: 16%;
+        justify-content: center;
+    }
+
+    #ver_sel_pc {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        height: 8vh;
+    }
+
+    #ver_sel_user {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        align-items: center;
+        height: 8vh;
+    }
+
+    .tarjetas-mokepon-selected {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #card_selected_pc {
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    #card_selected_user{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .tarjetas-mokepon-selected img {
+        margin-top: -5px;
+        width: 35px;
+    }
+
+    #seleccionar-ataque h2 {
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .card_combate_center {
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid rgb(167, 167, 167);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .cabeceras {
+        display: flex;
+        flex-direction: row;
+        height: 5vh;
+        width: 100%;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        column-gap: 10px;
+    }
+
+    .cabeceras * span {
+        font-size: 15px;
+    }
+
+    .resultados_combate * p {
+        font-size: 15px;
+        line-height: 5px;
+        text-align: center;
+    }
+
+    .mostrar_vidas {
+        font-size: 35px;
+    }
+
+    .tarjetas-mokepon-selected p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .botones_ataque {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .btn-atk:hover {
+        font-size: 16px;
+        background-color: rgb(62, 62, 62);
+        box-sizing: border-box;
+    }
+
+    #mensaje_final h1 {
+        color: yellow;
+        -webkit-text-stroke: 0.5px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 16px;
+        margin-top: -5px;
+        margin-bottom: 0px;
+    }
+
+    #reiniciar button {
+        width: 130px;
+        height: 40px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    body {
+        height: 100vh;
+        background-image: url(/assets/img/background8bit.jpg);
+        backdrop-filter: blur(1px);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor_ppal{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+
+    /* ELEGIR MOKEPON */
+    .cont_combate-gral {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    #seleccionar-mascota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 95vh;
+        border-radius: 10px;
+        width: 60vh;
+        border: 1px solid black;
+        margin-top: 0px;
+        padding: 1rem;
+        box-sizing: border-box;
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+    }
+
+    .titulo_ppal {
+        color: yellow;
+        -webkit-text-stroke: 1px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 15px;
+        text-shadow: 0.1em 0.1em 0.2em black
+    }
+
+    .subtitulo{
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .tarjetas-mokepon p {
+        font-size: 15px;
+        line-height: 0px;
+        margin-top: 10px;
+    }
+
+    .tarjetas-mokepon img {
+        margin-top: 5px;
+        width: 60px;
+    }
+
+    #seleccionar-mascota label {
+        font-family: 'VT323', monospace;
+        border: 1px solid rgb(129, 129, 129);
+        width: 25vw;
+        height: 20vh;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 7px;
+        box-sizing: border-box;
+        color: aliceblue;
+    }
+
+    #seleccionar-mascota input:checked + label img {
+        width: 62px;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+
+    #seleccionar-mascota input:checked + label p {
+        font-size: 13px;
+    }
+
+
+
+    /* VISTA COMBATE */
+    .btn-atk {
+        width: 87px;
+        height: 31px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 14px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #seleccionar-ataque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 98vh;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        margin-bottom: 0px;
+        color: aliceblue;
+    }
+
+
+    
+    .contenedor_combate {
+        display: flex;
+        justify-content: space-between;
+        width: 85vw;
+        height: inherit;
+        margin-top: 2vh;
+        margin-bottom: 50px;
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .card_combate_players {
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid rgb(180, 180, 180);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+        height: 16%;
+        justify-content: center;
+    }
+
+    #ver_sel_pc {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        height: 8vh;
+    }
+
+    #ver_sel_user {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        align-items: center;
+        height: 8vh;
+    }
+
+    .tarjetas-mokepon-selected {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #card_selected_pc {
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    #card_selected_user{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .tarjetas-mokepon-selected img {
+        margin-top: -5px;
+        width: 35px;
+    }
+
+    #seleccionar-ataque h2 {
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+
+    .card_combate_center {
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid rgb(167, 167, 167);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(30, 30, 72, 0.7) 50%, rgb(50, 62, 64) 100%);
+        -webkit-box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        -moz-box-shadow: 10px 10px 33px 10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 33px 10px rgb(0 0 0 / 75%);
+        font-family: 'VT323', monospace;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .cabeceras {
+        display: flex;
+        flex-direction: row;
+        height: 5vh;
+        width: 100%;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        column-gap: 10px;
+    }
+
+    .cabeceras * span {
+        font-size: 15px;
+    }
+
+    .resultados_combate * p {
+        font-size: 15px;
+        line-height: 5px;
+        text-align: center;
+    }
+
+    .mostrar_vidas {
+        font-size: 35px;
+    }
+
+    .tarjetas-mokepon-selected p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .botones_ataque {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .btn-atk:hover {
+        font-size: 16px;
+        background-color: rgb(62, 62, 62);
+        box-sizing: border-box;
+    }
+
+    #mensaje_final h1 {
+        color: yellow;
+        -webkit-text-stroke: 0.5px rgb(36, 114, 154);
+        flex-direction: column;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 16px;
+        margin-top: -5px;
+        margin-bottom: 0px;
+    }
+
+    #reiniciar button {
+        width: 130px;
+        height: 40px;
+        border-radius: 15px;
+        font-family: 'VT323', monospace;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 1px;
+        background-color: black;
+        color: aliceblue;
+        box-sizing: border-box;
+    }
+
+
 }

@@ -90,85 +90,89 @@
         <h1 class="titulo_ppal">Mokepon!</h1>
 
         <!-- selecciones de ataques -->
-        <h2 class="subtitulo">Elige tu ataque</h2>
+        <h2 class="subtitulo" id="bloque-subtitulo">Elige tu ataque</h2>
 
-        <!-- botones de atk -->
-        <div class="botones_ataque">
-            <button id="btn_sel_atk_fuego" class="btn-atk">Fuego 🔥</button>
-            <button id="btn_sel_atk_tierra" class="btn-atk">Tierra 🌱</button>
-            <button id="btn_sel_atk_agua" class="btn-atk">Agua 💧</button>
-        </div>
-
-        <!-- mensajes -->
-        <div class="contenedor_combate">
-            
-            <!-- MOSTRAR SELECCION USUARIO -->
-            <div class="card_combate_players" id="ver_sel_user">
-                <h2 class="subtitulo">Jugador</h2>
-                <div id="card_selected_user" class="tarjetas-mokepon-selected">
-                    <p>vidas</p>
-                    <span class="mostrar_vidas" id="vidas_Jugador">3</span>
-                    <img id="img_selected_user" src="" alt="...">
-                </div>
-            </div>
-
-            <!-- salida variante dependiendo de los ataques -->
-            <div class="card_combate_center">
-
-                <!-- cabeceras del centro combate -->
-                <div class="cabeceras">
-                    <div>
-                        <span id="nombre_mokepon_usuario"></span>
-                    </div>
-                    <div>
-                        <h3 class="subtitulo">VS</h3>
-                    </div>
-                    <div>
-                        <span id="nombre_mokepon_adversario"></span>
-                    </div>
-                </div>
-
-                <div class="resultados_combate" >
-                    <div>
-                        <!-- salida ataques Jugador-->
-                    <div id="atkDelJugador"></div>
-                    </div>
-                    <div>
-                        <h3 class="subtitulo" id="mensajes"></h3>
-                    </div>
-                    <div>
-                        <!-- salida ataques PC-->
-                        <div id="AtkDelEnemigo"></div>
-                    </div>
-                </div>
-                
-                
-                <!-- mensajes de salida de los ataques -->
-            </div>
-            
-            <!-- MOSTRAR SELECCION PC -->
-            <section class="card_combate_players" id="ver_sel_pc">
-                <h2 class="subtitulo">PC</h2>
-                <div id="card_selected_pc" class="tarjetas-mokepon-selected">
-                    <p>vidas</p>
-                    <span class="mostrar_vidas" id="vidas_PC">3</span>
-                    <img id="img_selected_pc" src="" alt="">
-
-                </div>
-            </section>
-        </div>
-
-        <!-- MENSAJE FINAL -->
-        <section id="mensaje_final">
-
-        </section>
-
+        <!-- MENSAJE FINAL - solo se habilita al finalizar el juego -->
+        <section id="mensaje_final"></section>
         <!-- boton para reiniciar juego -->
         <section id="reiniciar">
             <button>Reiniciar</button>
         </section>
 
+        <div class="cont_combate-gral">
+            <!-- botones de atk -->
+            <div class="botones_ataque" id="bloque-btn-atk">
+                <button id="btn_sel_atk_fuego" class="btn-atk">Fuego 🔥</button>
+                <button id="btn_sel_atk_tierra" class="btn-atk">Tierra 🌱</button>
+                <button id="btn_sel_atk_agua" class="btn-atk">Agua 💧</button>
+            </div>
+            
+            <!-- mensajes -->
+            <div class="contenedor_combate">
+            
+                <!-- MOSTRAR SELECCION USUARIO -->
+                <div class="card_combate_players" id="ver_sel_user">
+                    <h2 class="subtitulo">Jugador</h2>
+                    <div id="card_selected_user" class="tarjetas-mokepon-selected">
+                        <p>vidas</p>
+                        <span class="mostrar_vidas" id="vidas_Jugador">3</span>
+                        <img id="img_selected_user" src="" alt="...">
+                    </div>
+                </div>
+            
+                <!-- salida variante dependiendo de los ataques -->
+                <div class="card_combate_center">
+            
+                    <!-- cabeceras del centro combate -->
+                    <div class="cabeceras">
+                        <div>
+                            <span id="nombre_mokepon_usuario"></span>
+                        </div>
+                        <div>
+                            <h3 class="subtitulo">VS</h3>
+                        </div>
+                        <div>
+                            <span id="nombre_mokepon_adversario"></span>
+                        </div>
+                    </div>
+            
+                    <div class="resultados_combate">
+                        <div>
+                            <!-- salida ataques Jugador-->
+                            <div id="atkDelJugador"></div>
+                        </div>
+                        <div>
+                            <h3 class="subtitulo" id="mensajes"></h3>
+                        </div>
+                        <div>
+                            <!-- salida ataques PC-->
+                            <div id="AtkDelEnemigo"></div>
+                        </div>
+                    </div>
+            
+            
+                    <!-- mensajes de salida de los ataques -->
+                </div>
+            
+                <!-- MOSTRAR SELECCION PC -->
+                <section class="card_combate_players" id="ver_sel_pc">
+                    <h2 class="subtitulo">PC</h2>
+                    <div id="card_selected_pc" class="tarjetas-mokepon-selected">
+                        <p>vidas</p>
+                        <span class="mostrar_vidas" id="vidas_PC">3</span>
+                        <img id="img_selected_pc" src="" alt="">
+            
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+        
+
     </section>
+
 
     
 </body>
