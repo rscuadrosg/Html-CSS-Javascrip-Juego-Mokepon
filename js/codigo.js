@@ -57,7 +57,7 @@ function seleccionMascotaJugador(){
 
     if (sel_hipodoge.checked){
         mascotaJugador.innerHTML = 'Hipodoge'
-        mostrarImgSelectedUser.src = '/assets/mokepons/hipodoge.png'
+        mostrarImgSelectedUser.src = '/assets/hipodoge.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -65,7 +65,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_capipepo.checked){
         mascotaJugador.innerHTML = 'Capipepo'
-        mostrarImgSelectedUser.src = '/assets/mokepons/capipepo.png'
+        mostrarImgSelectedUser.src = '/assets/capipepo.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -73,7 +73,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_ratigueya.checked){
         mascotaJugador.innerHTML = 'Ratigueya'
-        mostrarImgSelectedUser.src = '/assets/mokepons/ratigueya.png'
+        mostrarImgSelectedUser.src = '/assets/ratigueya.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -82,7 +82,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_langostelvis.checked){
         mascotaJugador.innerHTML = 'Langostelvis'
-        mostrarImgSelectedUser.src = '/assets/mokepons/langostelvis.webp'
+        mostrarImgSelectedUser.src = '/assets/langostelvis.webp'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -90,7 +90,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_tucapalma.checked){
         mascotaJugador.innerHTML = 'Tucapalma'
-        mostrarImgSelectedUser.src = '/assets/mokepons/tucapalma.webp'
+        mostrarImgSelectedUser.src = '/assets/tucapalma.webp'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -98,7 +98,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_pydos.checked){
         mascotaJugador.innerHTML = 'Pydos'
-        mostrarImgSelectedUser.src = '/assets/mokepons/pydos.png'
+        mostrarImgSelectedUser.src = '/assets/pydos.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -121,32 +121,32 @@ function seleccionMascotaEnemigo(){
 
     if (mascotaenemigo==1){
         mostrarMascotaEnemigo.innerHTML = 'Hipogoge'
-        mostrarImgSelectedPC.src = '/assets/mokepons/hipodoge.png'
+        mostrarImgSelectedPC.src = '/assets/hipodoge.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==2){
         mostrarMascotaEnemigo.innerHTML = 'Capipepo'
-        mostrarImgSelectedPC.src = '/assets/mokepons/capipepo.png'
+        mostrarImgSelectedPC.src = '/assets/capipepo.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==3){
         mostrarMascotaEnemigo.innerHTML = 'Ratigueya'
-        mostrarImgSelectedPC.src = '/assets/mokepons/ratigueya.png'
+        mostrarImgSelectedPC.src = '/assets/ratigueya.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==4){
         mostrarMascotaEnemigo.innerHTML = 'Langostelvis'
-        mostrarImgSelectedPC.src = '/assets/mokepons/langostelvis.webp'
+        mostrarImgSelectedPC.src = '/assets/langostelvis.webp'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==5){
         mostrarMascotaEnemigo.innerHTML = 'Tucapalma'
-        mostrarImgSelectedPC.src = '/assets/mokepons/tucapalma.webp'
+        mostrarImgSelectedPC.src = '/assets/tucapalma.webp'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==6){
         mostrarMascotaEnemigo.innerHTML = 'Pydos'
-        mostrarImgSelectedPC.src = '/assets/mokepons/pydos.png'
+        mostrarImgSelectedPC.src = '/assets/pydos.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
 }
