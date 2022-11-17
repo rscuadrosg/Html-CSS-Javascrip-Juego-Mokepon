@@ -1,4 +1,3 @@
-
 let ataqueJugador
 let ataqueEnemigo
 let sectionMensajes
@@ -43,7 +42,6 @@ function seleccionMascotaJugador(){
     //Esconder seccion de selecion de seleccionar Mascota
     let sectionSelMokepon = document.getElementById('seleccionar-mascota')
 
-
     let sel_hipodoge = document.getElementById('hipodoge')
     let sel_capipepo = document.getElementById('capipepo')
     let sel_ratigueya = document.getElementById('ratigueya')
@@ -53,11 +51,9 @@ function seleccionMascotaJugador(){
     let mascotaJugador = document.getElementById('nombre_mokepon_usuario')
     let mostrarImgSelectedUser = document.getElementById('img_selected_user')
 
-
-
     if (sel_hipodoge.checked){
         mascotaJugador.innerHTML = 'Hipodoge'
-        mostrarImgSelectedUser.src = '/assets/hipodoge.png'
+        mostrarImgSelectedUser.src = './assets/hipodoge.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -65,7 +61,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_capipepo.checked){
         mascotaJugador.innerHTML = 'Capipepo'
-        mostrarImgSelectedUser.src = '/assets/capipepo.png'
+        mostrarImgSelectedUser.src = './assets/capipepo.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -73,16 +69,15 @@ function seleccionMascotaJugador(){
     }
     else if (sel_ratigueya.checked){
         mascotaJugador.innerHTML = 'Ratigueya'
-        mostrarImgSelectedUser.src = '/assets/ratigueya.png'
+        mostrarImgSelectedUser.src = './assets/ratigueya.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
-        seleccionMascotaEnemigo()
-        
+        seleccionMascotaEnemigo()    
     }
     else if (sel_langostelvis.checked){
         mascotaJugador.innerHTML = 'Langostelvis'
-        mostrarImgSelectedUser.src = '/assets/langostelvis.webp'
+        mostrarImgSelectedUser.src = './assets/langostelvis.webp'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -90,7 +85,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_tucapalma.checked){
         mascotaJugador.innerHTML = 'Tucapalma'
-        mostrarImgSelectedUser.src = '/assets/tucapalma.webp'
+        mostrarImgSelectedUser.src = './assets/tucapalma.webp'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -98,7 +93,7 @@ function seleccionMascotaJugador(){
     }
     else if (sel_pydos.checked){
         mascotaJugador.innerHTML = 'Pydos'
-        mostrarImgSelectedUser.src = '/assets/pydos.png'
+        mostrarImgSelectedUser.src = './assets/pydos.png'
         document.getElementById('card_selected_user').style.display = 'flex'
         sectionSelAtk.style.display = 'flex'
         sectionSelMokepon.style.display = 'none'
@@ -121,32 +116,32 @@ function seleccionMascotaEnemigo(){
 
     if (mascotaenemigo==1){
         mostrarMascotaEnemigo.innerHTML = 'Hipogoge'
-        mostrarImgSelectedPC.src = '/assets/hipodoge.png'
+        mostrarImgSelectedPC.src = './assets/hipodoge.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==2){
         mostrarMascotaEnemigo.innerHTML = 'Capipepo'
-        mostrarImgSelectedPC.src = '/assets/capipepo.png'
+        mostrarImgSelectedPC.src = './assets/capipepo.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==3){
         mostrarMascotaEnemigo.innerHTML = 'Ratigueya'
-        mostrarImgSelectedPC.src = '/assets/ratigueya.png'
+        mostrarImgSelectedPC.src = './assets/ratigueya.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==4){
         mostrarMascotaEnemigo.innerHTML = 'Langostelvis'
-        mostrarImgSelectedPC.src = '/assets/langostelvis.webp'
+        mostrarImgSelectedPC.src = './assets/langostelvis.webp'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==5){
         mostrarMascotaEnemigo.innerHTML = 'Tucapalma'
-        mostrarImgSelectedPC.src = '/assets/tucapalma.webp'
+        mostrarImgSelectedPC.src = './assets/tucapalma.webp'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
     else if (mascotaenemigo==6){
         mostrarMascotaEnemigo.innerHTML = 'Pydos'
-        mostrarImgSelectedPC.src = '/assets/pydos.png'
+        mostrarImgSelectedPC.src = './assets/pydos.png'
         document.getElementById('card_selected_pc').style.display = 'flex'
     }
 }
